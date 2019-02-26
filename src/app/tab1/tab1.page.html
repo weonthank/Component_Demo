@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Range
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-range color="danger" max="255" pin="true" (ionChange)="Change">
+        <ion-label slot="start">0</ion-label>
+        <ion-label slot="end">255</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range color="primary" pin="true">
+        <ion-label slot="start">0</ion-label>
+        <ion-label slot="end">255</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range color="success" pin="true">
+        <ion-label slot="start">0</ion-label>
+        <ion-label slot="end">255</ion-label>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+  <p>I was gonna make these change the RGB color of a square block but I forgot we havn't gotten into the .ts stuff yet :(</p>
+</ion-content>
